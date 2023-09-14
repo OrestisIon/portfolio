@@ -10,7 +10,7 @@ const parseProfile = (mdContent) => {
     contact: "",
     linkedin: "",
     github: "",
-    email: "",
+    email: "orestisj@gmail.com",
     logo: "",
   };
 
@@ -19,17 +19,21 @@ const parseProfile = (mdContent) => {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
 
+  console.log(line)
+
     if (line.startsWith("## ")) {
       const section = line.substr(3).trim();
 
       switch (section) {
         case "Header":
           profile.headerName = lines[++i].substr(2).trim();
+          profile.headerName = "Hi, my name is Orestis"
           profile.headerRole = lines[++i].substr(2).trim();
           profile.headerDesc = lines[++i].substr(2).trim();
           break;
         case "About":
           profile.about = lines[++i].trim();
+          profile.about = "I'm a final-year Computer Science student brimming with enthusiasm and a strong technical foundation. My academic journey has been an exhilarating exploration of algorithms, data structures, and software engineering, but what truly ignites my passion is the art of coding and the relentless pursuit of innovation. Collaborating with diverse teams on projects has not only sharpened my technical skills but also enhanced my ability to communicate effectively. I'm actively seeking opportunities to contribute to innovative projects, combining my technical expertise with a commitment to making a transformative impact through technology. Welcome to my portfolio, where I showcase my passion, curiosity, and dedication to excellence. Let's embark on this exciting journey of tech exploration and professional growth together!";
           break;
         case "Contact":
           profile.contact = lines[++i].trim();
@@ -40,6 +44,9 @@ const parseProfile = (mdContent) => {
               profile[link.toLowerCase()] = linkLine.split(": ")[1].trim();
             }
           }
+          profile["linkedin"] = "https://www.linkedin.com/in/orestis-iona-cs/";
+          profile["email"] = "orestisj@gmail.com";
+          profile["github"] = "https://github.com/OrestisIon";
           break;
         case "Logo":
           profile.logo = lines[++i].substr(2).trim();

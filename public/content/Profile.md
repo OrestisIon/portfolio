@@ -2,7 +2,7 @@
 - Portable Portfolio
 
 ## Header
-- Hi, my name is Eldora. 
+- Hi, my name is Orestis. 
 - I'm a software engineer.
 - Short Description Here.
 
@@ -16,4 +16,4 @@ Write your "Contact" section here.
 - Email: username@gmail.com
 
 ## Logo
-- EB
+- OI

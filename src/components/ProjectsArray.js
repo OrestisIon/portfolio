@@ -49,7 +49,7 @@ const ProjectsArray = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("/content/Projects.md")
+    fetch("./content/Projects.md")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content");
@@ -57,6 +57,7 @@ const ProjectsArray = () => {
         return response.text();
       })
       .then((mdContent) => {
+        console.log(mdContent);
         setProjects(parseProjects(mdContent));
       })
       .catch((error) => {

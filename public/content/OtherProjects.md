@@ -1,22 +1,40 @@
-## Project 1
+## Penetration Testing and OSINT research
 Description
-- Tags: Category 1
+- Tags: Cyber Security
 - Badges:
   - Badge [blue]
 - Buttons:
   - Link [https://example.com]
 
-## Project 2
+## Data Structures
 Description
-- Tags: Category 2
+- Tags: Java
 - Badges:
   - Badge [blue]
 - Buttons:
   - Link [https://example.com]
 
-## Project 3
-Description
-- Tags: Category 3
+## Robot Maze 
+Programming a robot to find the most efficient path in a maze
+- Tags: Java
+- Badges:
+  - Badge [blue]
+- Buttons:
+  - Link [https://example.com]
+
+
+## Billshare
+My first full stack project
+- Tags: HTML5, CSS3, Javascript, JQuery, Ajax, Python, 
+- Badges:
+  - Badge [blue]
+- Buttons:
+  - Link [https://example.com]
+
+
+## Unique Text Editor Program
+A text editor advance enough to let users to manipulate in an efficent manner any text file
+- Tags: C Programming Language
 - Badges:
   - Badge [blue]
 - Buttons:
