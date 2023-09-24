@@ -1,3 +1,11 @@
+## Deutsche Bank Campus Project
+State of the art Web Application with integrated Machine Learning 
+- ![600x200](/images/dbp.png)
+- Tags: Software Engineering, React, Djano
+- Badges:
+  - Badge [blue]
+- Buttons:
+  - Link [https://github.com/Group8-CS261/CS261-Project]
 ## Databases
 Design of Postgresql Schema and Complex Queries 
 - ![600x200](/images/sql.webp)
@@ -5,7 +13,7 @@ Design of Postgresql Schema and Complex Queries
 - Badges:
   - Badge [blue]
 - Buttons:
-  - Link [https://example.com]
+  - Link [https://github.com/OrestisIon/PostgreSQL-Project]
 
 ## Intrusion detection system
 TCP/IP Protocols (networks) and Threading (OS)
@@ -14,13 +22,5 @@ TCP/IP Protocols (networks) and Threading (OS)
 - Badges:
   - Badge [blue]
 - Buttons:
-  - Link [https://example.com]
+  - Link [https://github.com/OrestisIon/Intrusion-detection]
 
-## Deutsche Bank Campus Project
-State of the art Web Application with integrated Machine Learning 
-- ![600x200](/images/dbp.png)
-- Tags: Software Engineering, React, Djano
-- Badges:
-  - Badge [blue]
-- Buttons:
-  - Link [https://example.com]
