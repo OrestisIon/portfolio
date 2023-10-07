@@ -17,23 +17,35 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import ProjectsArray from "./ProjectsArray";
 import OtherProjectsArray from "./OtherProjectsArray";
 import TagsArray from "./TagsArray";
+import React from 'react';
+import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+import 'react-horizontal-scrolling-menu/dist/styles.css';
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+} from '@chakra-ui/icons';
+
+
 
 export default function Projects({ color }) {
-    const projects = ProjectsArray();
-    const others = OtherProjectsArray();
-    const options = TagsArray("ProjectsTags");
+  const projects = ProjectsArray();
+  const others = OtherProjectsArray();
+  const options = TagsArray("ProjectsTags");
+  const ref = useRef(null);
     
-    const [selected, setSelected] = useState("All");
+  const [selected, setSelected] = useState("All");
 
-    const handleSelected = (value) => {
-      setSelected(value);
-    };
+  const handleSelected = (value) => {
+    setSelected(value);
+  };
+  
+
     
-  return (
+return (
     <>
       <Container maxW={"3xl"} id="projects">
         <Stack
@@ -97,8 +109,17 @@ export default function Projects({ color }) {
           <Text color={"gray.600"} fontSize={"xl"} px={4}>
             Other Projects
           </Text>
-          <Center px={4}>
-            <ButtonGroup variant="outline">
+        <Center px={4}>
+
+          <ScrollMenu LeftArrow={LeftArrow(ref)} RightArrow={RightArrow(ref)}>
+            <div
+              style={{
+                display: 'flex',
+                overflowX: 'scrolable', // Hide horizontal scrollbar
+                width: '1000px',
+              }}
+            >
+            <ButtonGroup variant="outline" >
               <Button
                 colorScheme={selected === "All" ? `${color}` : "gray"}
                 onClick={() => handleSelected("All")}
@@ -113,8 +134,12 @@ export default function Projects({ color }) {
                   {option.value}
                 </Button>
               ))}
-            </ButtonGroup>
-          </Center>
+              </ButtonGroup>
+              </div>
+
+          </ScrollMenu>
+          
+            </Center>
           <SimpleGrid columns={[1, 2, 3]} px={4} spacing={4}>
             {others
               .filter((other) => {
@@ -168,3 +193,30 @@ export default function Projects({ color }) {
     </>
   );
 }
+
+function LeftArrow(ref) {
+
+  return (
+    <Button
+      onClick={() => scroll(-20, ref)}
+      colorScheme="blue" // Adjust the color scheme as needed
+    >
+      <ArrowLeftIcon />
+    </Button>
+  );
+}
+
+function RightArrow(ref) {
+  return (
+    <Button
+      onClick={() => scroll(+20,ref)}
+      colorScheme="blue" // Adjust the color scheme as needed
+    >
+      <ArrowRightIcon />
+    </Button>
+  );
+}
+
+const scroll = (scrollOffset,ref) => {
+  ref.current.scrollLeft += scrollOffset;
+};

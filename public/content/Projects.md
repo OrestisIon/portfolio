@@ -6,6 +6,7 @@ State of the art Web Application with integrated Machine Learning
   - Badge [blue]
 - Buttons:
   - Link [https://github.com/Group8-CS261/CS261-Project]
+  
 ## Databases
 Design of Postgresql Schema and Complex Queries 
 - ![600x200](/images/sql.webp)
