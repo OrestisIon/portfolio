@@ -4,7 +4,7 @@ Demonstrating my expertise in assessing vulnerabilities, identifying weaknesses,
 - Badges:
   - Badge [blue]
 - Buttons:
-  - Link [https://example.com]
+  - Link [https://github.com/OrestisIon/cyber-project]
 
 ## Data Structures Project
 A testament to my proficiency in crafting and utilizing data structures from the ground up. Explore a collection of meticulously designed data structures, each created from scratch, to witness the depth of my expertise in data organization and manipulation.
@@ -20,7 +20,7 @@ An advanced text editor designed to empower users with unparalleled efficiency i
 - Badges:
   - Badge [blue]
 - Buttons:
-  - Link [https://example.com]
+  - Link [https://github.com/OrestisIon/EditSmart]
 
 ## MazeExplorerAI
 Programming a robot to find the most efficient path in a maze
@@ -28,7 +28,7 @@ Programming a robot to find the most efficient path in a maze
 - Badges:
   - Badge [blue]
 - Buttons:
-  - Link [https://example.com]
+  - Link [https://github.com/OrestisIon/LabyrinthBot]
 
 
 
@@ -48,4 +48,4 @@ PLM (Programming Language of the Moment) is a language that allows users to writ
 - Badges:
   - Badge [red]
 - Buttons:
-  - Link [https://example.com]
+  - Link [https://github.com/OrestisIon/]
