@@ -2,7 +2,7 @@
 Demonstrating my expertise in assessing vulnerabilities, identifying weaknesses, and executing ethical hacking techniques.
 - Tags: Cyber Security
 - Badges:
-  - Badge [blue]
+  - Medium [orange]
 - Buttons:
   - Link [https://github.com/OrestisIon/cyber-project]
 
@@ -10,7 +10,7 @@ Demonstrating my expertise in assessing vulnerabilities, identifying weaknesses,
 A testament to my proficiency in crafting and utilizing data structures from the ground up. Explore a collection of meticulously designed data structures, each created from scratch, to witness the depth of my expertise in data organization and manipulation.
 - Tags: Java
 - Badges:
-  - Badge [blue]
+  - Hard [red]
 - Buttons:
   - Link [https://github.com/OrestisIon/data-structures-project]
 
@@ -18,7 +18,7 @@ A testament to my proficiency in crafting and utilizing data structures from the
 An advanced text editor designed to empower users with unparalleled efficiency in manipulating text files. With a rich set of innovative features, it allows you to seamlessly create, edit, and optimize text documents, making it the ideal choice for anyone who demands precision and speed in text editing
 - Tags: C Programming Language
 - Badges:
-  - Badge [blue]
+  - Easy [green]
 - Buttons:
   - Link [https://github.com/OrestisIon/EditSmart]
 
@@ -26,7 +26,7 @@ An advanced text editor designed to empower users with unparalleled efficiency i
 Programming a robot to find the most efficient path in a maze
 - Tags: Java
 - Badges:
-  - Badge [blue]
+  - Medium [orange]
 - Buttons:
   - Link [https://github.com/OrestisIon/LabyrinthBot]
 
@@ -36,7 +36,7 @@ Programming a robot to find the most efficient path in a maze
 My first full stack software project
 - Tags: HTML5,CSS3,Javascript,Flask
 - Badges:
-  - Badge [blue]
+  - Easy [green]
 - Buttons:
   - Link [https://github.com/OrestisIon/my-first-website]
 
@@ -46,6 +46,6 @@ My first full stack software project
 PLM (Programming Language of the Moment) is a language that allows users to write code that computes non-negative integers.
 - Tags: Java
 - Badges:
-  - Badge [red]
+  - Hard [red]
 - Buttons:
   - Link [https://github.com/OrestisIon/]
