@@ -1,20 +1,28 @@
-## Penetration Testing and OSINT research
-Description
+## Cyber Reconnaissance: Penetration Testing and OSINT Mastery
+Demonstrating my expertise in assessing vulnerabilities, identifying weaknesses, and executing ethical hacking techniques.
 - Tags: Cyber Security
 - Badges:
   - Badge [blue]
 - Buttons:
   - Link [https://example.com]
 
-## Data Structures
-Description
+## Data Structures Project
+A testament to my proficiency in crafting and utilizing data structures from the ground up. Explore a collection of meticulously designed data structures, each created from scratch, to witness the depth of my expertise in data organization and manipulation.
 - Tags: Java
 - Badges:
   - Badge [blue]
 - Buttons:
   - Link [https://github.com/OrestisIon/data-structures-project]
 
-## Robot Maze 
+## EditSmart
+An advanced text editor designed to empower users with unparalleled efficiency in manipulating text files. With a rich set of innovative features, it allows you to seamlessly create, edit, and optimize text documents, making it the ideal choice for anyone who demands precision and speed in text editing
+- Tags: C Programming Language
+- Badges:
+  - Badge [blue]
+- Buttons:
+  - Link [https://example.com]
+
+## MazeExplorerAI
 Programming a robot to find the most efficient path in a maze
 - Tags: Java
 - Badges:
@@ -23,26 +31,20 @@ Programming a robot to find the most efficient path in a maze
   - Link [https://example.com]
 
 
+
 ## Billshare
 My first full stack software project
-- Tags: HTML5, CSS3, Javascript, JQuery, Ajax, Python, Flask
+- Tags: HTML5,CSS3,Javascript,Flask
 - Badges:
   - Badge [blue]
 - Buttons:
   - Link [https://github.com/OrestisIon/my-first-website]
 
 
-## Unique Text Editor Program
-A text editor advance enough to let users to manipulate in an efficent manner any text file
-- Tags: C Programming Language
-- Badges:
-  - Badge [blue]
-- Buttons:
-  - Link [https://example.com]
 
 ## Custom Programming Language  
 PLM (Programming Language of the Moment) is a language that allows users to write code that computes non-negative integers.
-- Tags: Java, JavaCC
+- Tags: Java
 - Badges:
   - Badge [red]
 - Buttons:

@@ -22,28 +22,39 @@ import ProjectsArray from "./ProjectsArray";
 import OtherProjectsArray from "./OtherProjectsArray";
 import TagsArray from "./TagsArray";
 import React from 'react';
-import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
 import 'react-horizontal-scrolling-menu/dist/styles.css';
 import {
   ArrowLeftIcon,
   ArrowRightIcon,
 } from '@chakra-ui/icons';
 
-
-
 export default function Projects({ color }) {
   const projects = ProjectsArray();
   const others = OtherProjectsArray();
   const options = TagsArray("ProjectsTags");
-  const ref = useRef(null);
-    
+  const elementRef = useRef(null);
+  const [arrowDisable, setArrowDisable] = useState(true);
   const [selected, setSelected] = useState("All");
-
   const handleSelected = (value) => {
     setSelected(value);
   };
+  const handleHorizantalScroll = (element, speed, distance, step) => {
+    console.log(element);
+    let scrollAmount = 0;
+    const slideTimer = setInterval(() => {
+      element.scrollLeft += step;
+      scrollAmount += Math.abs(step);
+      if (scrollAmount >= distance) {
+        clearInterval(slideTimer);
+      }
+      if (element.scrollLeft === 0) {
+        setArrowDisable(true);
+      } else {
+        setArrowDisable(false);
+      }
+    }, speed);
+  };
   
-
     
 return (
     <>
@@ -111,15 +122,31 @@ return (
           </Text>
         <Center px={4}>
 
-          <ScrollMenu LeftArrow={LeftArrow(ref)} RightArrow={RightArrow(ref)}>
-            <div
+          <Button
+            onClick={() => {
+              handleHorizantalScroll(elementRef.current, 10, 100, -10);
+            }}
+            disabled={arrowDisable}
+            colorScheme="blue" // Adjust the color scheme as needed
+            id='left-arrow'
+            mr={2} // Add margin to the right of the button
+          >
+            <ArrowLeftIcon />
+          </Button>   
+          <div
               style={{
                 display: 'flex',
-                overflowX: 'scrolable', // Hide horizontal scrollbar
-                width: '1000px',
-              }}
-            >
-            <ButtonGroup variant="outline" >
+                overflowY: 'hide', // Hide horizontal scrollbar
+              width: '1000px',
+              overflowX: 'scroll',
+              whitespace: 'nowrap',
+                
+            }}
+           
+              ref={elementRef}
+          >
+            
+              <ButtonGroup variant="outline" ref={elementRef} >
               <Button
                 colorScheme={selected === "All" ? `${color}` : "gray"}
                 onClick={() => handleSelected("All")}
@@ -135,9 +162,18 @@ return (
                 </Button>
               ))}
               </ButtonGroup>
-              </div>
+          </div>
+          <Button
+            id='right-arrow'
+            onClick={() => {
+              handleHorizantalScroll(elementRef.current, 10, 100, 10);
+            }}
+            colorScheme="blue" // Adjust the color scheme as needed
+            ml={2} // Add margin to the left of the button
+          >
+            <ArrowRightIcon />
+          </Button>
 
-          </ScrollMenu>
           
             </Center>
           <SimpleGrid columns={[1, 2, 3]} px={4} spacing={4}>
@@ -194,29 +230,4 @@ return (
   );
 }
 
-function LeftArrow(ref) {
 
-  return (
-    <Button
-      onClick={() => scroll(-20, ref)}
-      colorScheme="blue" // Adjust the color scheme as needed
-    >
-      <ArrowLeftIcon />
-    </Button>
-  );
-}
-
-function RightArrow(ref) {
-  return (
-    <Button
-      onClick={() => scroll(+20,ref)}
-      colorScheme="blue" // Adjust the color scheme as needed
-    >
-      <ArrowRightIcon />
-    </Button>
-  );
-}
-
-const scroll = (scrollOffset,ref) => {
-  ref.current.scrollLeft += scrollOffset;
-};
