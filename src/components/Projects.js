@@ -84,10 +84,10 @@ return (
                   }}
                   overflow="hidden"
                 >
-                  <Image objectFit="cover" src={project.image} />
+                  <Image objectFit="contain" src={project.image} w="100%" h="300" />
 
                   <Stack>
-                    <CardBody align="left">
+                    <CardBody align="left" p={2}>
                       <Heading size="md">{project.name}</Heading>
 
                       <Text py={2}>{project.description}</Text>
