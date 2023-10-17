@@ -19,7 +19,7 @@ const parseProfile = (mdContent) => {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
 
-  console.log(line)
+  // console.log(line)
 
     if (line.startsWith("## ")) {
       const section = line.substr(3).trim();

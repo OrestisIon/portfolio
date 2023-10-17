@@ -39,7 +39,7 @@ export default function Projects({ color }) {
     setSelected(value);
   };
   const handleHorizantalScroll = (element, speed, distance, step) => {
-    console.log(element);
+    // console.log(element);
     let scrollAmount = 0;
     const slideTimer = setInterval(() => {
       element.scrollLeft += step;
